@@ -1,0 +1,393 @@
+body{
+    background-color: #000;
+}
+html{
+    max-width: 100%;
+    font-family: sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*****************Utility*****************/
+.container{
+    max-width: 1400;
+    width: 80%;
+    margin: 0px auto;
+}
+.space{
+    height: 0.5rem;
+    width: 100%;
+    background-color: rgb(35, 35, 35);
+}
+.hide{
+    display: none;
+}
+.rot-clock{
+    transform: rotate(45deg);
+    transition: all 100ms ease-in-out;
+}
+/**************Home Section**************/
+.home{
+    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/7ca5b7c7-20aa-42a8-a278-f801b0d65fa1/fb548c0a-8582-43c5-9fba-cd98bf27452f/IN-en-20240326-popsignuptwoweeks-perspective_alpha_website_small.jpg" );
+    background-size: contain;
+    background-position: center;
+    height: 100vh;
+}
+
+.gradient-black{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 0rem 0rem 0rem;
+    
+}
+.Netflix-logo{
+    width: 9.25rem;
+    height: 2.5rem;
+    color: rgb(229, 9, 20);
+    fill: currentColor;
+}
+#logo{
+    cursor: pointer;
+}
+.nav-right{
+    display: flex;
+    height: 2rem;
+}
+#langdrop{
+    display: flex;
+    background-color: rgb(0,0,0,0.7);
+    border: 1px solid rgb(255, 255, 255,0.7);
+    border-radius: 4px;
+    height: 100%;
+    align-items: center;
+}
+#langsymbol{
+    color: rgb(255, 255, 255, 0.9);
+    padding-left: 8px;
+}
+#language{
+    width: auto;
+    background:transparent;
+    color: rgb(255, 255, 255, 0.9);
+    font-size: 0.875rem;
+    font-weight: 500;
+    padding: 6px;
+    border: 0px solid transparent;
+    padding-right: 8px;
+}
+
+
+.btn-sign{
+    background-color: rgb(229, 9, 20);
+    border: 0px;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    width: auto;
+    font-size: 0.875rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    color: rgb(255, 255, 255);
+    transition-duration: 250ms;
+    transition-property: background-color;
+    height: 100%;
+}
+.btn-sign:hover{
+    background: rgb(193, 17, 25);
+}
+.nav-right .btn{
+    margin-left: 2.5rem;
+}
+
+.home-content{
+    margin: 14rem auto;
+    text-align: center;
+}
+.home-content h1{
+    font-size: 3rem;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+}
+.home-content p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 1rem auto;
+    color: rgb(255, 255, 255);
+}
+.home-content h3{
+    font-size: 1.17rem;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+.email-container{
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+}
+.email-container input{
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    min-width: 12.5rem;
+    width: 35%;
+    background:transparent;
+    background-color: rgb(0,0,0,0.7);
+    border: 1px solid rgb(255, 255, 255,0.7);
+    border-radius: 4px;
+}
+.home-content .email-container input::placeholder{
+    padding-left: 20px;
+    color: rgb(255, 255, 255, 0.6);
+}
+
+.get-started{
+    margin-left: 0.5rem;
+    vertical-align: text-top;
+    width: auto;
+    border: 0px;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 500;
+    min-height: 3.5rem;
+    padding: 0.75rem 1.5rem;
+    background: rgb(229, 9, 20);
+    color: rgb(255, 255, 255);
+    transition-duration: 250ms;
+    transition-property: background-color;
+    display: flex;
+    justify-content: center;
+}
+.get-started:hover{
+    background: rgb(193, 17, 25);
+}
+
+
+
+/**********Promotion Section**********/
+.promotion-section{
+    color: rgb(255,255,255);
+}
+.promotion{
+    margin-top: 4.5rem;
+    margin-bottom: 4.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.promo-content{
+    text-align: left;
+}
+.promo-content h2{
+    font-size: 3rem;
+    font-weight: 900;
+}
+.promo-content p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 1rem;
+}
+#promotion-1 .promo-content, #promotion-3 .promo-content, #promotion-2 .promo-graphics, #promotion-4 .promo-graphics{
+    padding-right: 0.375rem;
+}
+#promotion-1 .promo-graphics, #promotion-3 .promo-graphics, #promotion-2 .promo-content, #promotion-4 .promo-content{
+    padding-left: 0.375rem;
+}
+
+
+
+#promotion-1 .promo-graphics{
+    position: relative;
+}
+#promotion-1 .promo-graphics .promo-video{
+    position: absolute;
+    overflow: hidden;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    max-width: 73%;
+    max-height: 54%;
+    top: 47.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+#promotion-2 .promo-graphics{
+    position: relative;
+    text-align: center;
+}
+#promotion-2 .promo-graphics .promo-img img{
+    width: 100%;
+    zoom: 1.5;
+}
+#promotion-2 .stranger-strip{
+    display: flex;
+    background-color: #000;
+    padding: 0.5rem 0.75rem;
+    border: 2px solid rgba(128, 128, 128, 0.7);
+    box-shadow: 0 0 2em 0 rgb(0,0,0);
+    border-radius: 0.75rem;
+    z-index: 1;
+    width: 50%;
+    align-items: center;
+}
+#promotion-2 .stranger-strip .stranger-img{
+    margin: 0 1rem 0 0;
+}
+#promotion-2 .stranger-strip .stranger-img img{
+    height: 5rem;
+}
+#promotion-2 .stranger-strip .p1{
+    font-size: 1rem;
+    text-align: left;
+}
+#promotion-2 .stranger-strip .p2{
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #0071eb;
+    text-align: left;
+}
+#promotion-2 .stranger-strip .stranger-content{
+    margin: 0.3rem 0;
+}
+#promotion-2 .stranger-strip .down-gif{
+    width: 3rem;
+    margin-left: 2rem;
+    height: 3rem;
+    background: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif) center center no-repeat;
+    background-size: 100%;
+    content: '';
+}
+#promotion-2 .promo-graphics{
+    position: relative;
+}
+#promotion-2 .promo-graphics .stranger-strip{
+    position: absolute;
+    overflow: hidden;
+    z-index: 1;
+    top: 80%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+#promotion-3 .promo-graphics{
+    position: relative;
+}
+#promotion-3 .promo-graphics .promo-video{
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    max-width: 63%;
+    max-height: 47%;
+    top: 34%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
+/*****************FAQ*****************/
+.faq{
+    color: rgb(255, 255, 255);
+}
+.faq-head{
+    font-size: 3rem;
+    font-weight: 900;
+    width: 100%;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+.box{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(25,25,25);
+    margin-top: 0.5rem;
+    padding: 1.5rem;
+    margin-bottom: 1px;
+}
+.faq li{
+    list-style: none;
+}
+.faq h3{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.faq li p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    background-color: rgb(25,25,25);
+    padding: 1.5rem;
+}
+.email-details{
+    margin-top: 2.85rem;
+    margin-bottom: 4.5rem;
+}
+.email-details h3{
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.email-container input{
+    padding-left: 14px;
+}
+.vis{
+    visibility: hidden;
+}
+
+/************* Footer *************/
+.footer{
+    margin-bottom: 4.5rem;
+    color: rgb(255, 255, 255, 0.7);
+}
+.footer a{
+    color: rgb(255, 255, 255, 0.7);
+}
+.footer-content{
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin-top: 4.5rem;
+    margin-bottom: 4.5rem;
+}
+.footer-head{
+    font-size: 1rem;
+}
+.list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 1.375rem
+}
+.list .element{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.list .element a{
+    margin-top: 1rem;
+}
+.Netflix-Saurabh{
+    margin-top: 1.5rem;
+}
+.footer-content #langdrop{
+    display: inline-flex;
+}
